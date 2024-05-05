@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/obj/Debug/net8.0/scopedcss/projectbundle/UI.bundle.scp.css",
+      "PackagePath": "staticwebassets/UI.bundle.scp.css"
+    },
+    {
+      "Id": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.UI.props",
+      "PackagePath": "build\\UI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.UI.props",
+      "PackagePath": "buildMultiTargeting\\UI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.UI.props",
+      "PackagePath": "buildTransitive\\UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TOP_LEVEL.xst" -ofn "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TOP_LEVEL.syr" 

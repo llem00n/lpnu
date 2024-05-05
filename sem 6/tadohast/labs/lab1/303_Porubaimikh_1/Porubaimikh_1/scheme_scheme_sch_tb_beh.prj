@@ -1,0 +1,6 @@
+vhdl work "compare.vhd"
+vhdl work "ALU_G.vhd"
+vhdl work "ALU_B.vhd"
+verilog work "scheme.vf"
+vhdl work "testbench.vhd"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

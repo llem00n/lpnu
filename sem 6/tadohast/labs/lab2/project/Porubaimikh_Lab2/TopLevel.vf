@@ -1,0 +1,76 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : TopLevel.vf
+// /___/   /\     Timestamp : 03/29/2024 13:42:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3a -verilog Z:/school/lpnu/tadohast/lab2/project/Porubaimikh_Lab2/TopLevel.vf -w Z:/school/lpnu/tadohast/lab2/project/Porubaimikh_Lab2/TopLevel.sch
+//Design Name: TopLevel
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module TopLevel(A, 
+                CMP_Error, 
+                CS, 
+                DI, 
+                OE, 
+                RAM_Err_Output, 
+                RAM_Output, 
+                WR);
+
+   output [15:0] A;
+   output CMP_Error;
+   output CS;
+   output [3:0] DI;
+   output OE;
+   output [3:0] RAM_Err_Output;
+   output [3:0] RAM_Output;
+   output WR;
+   
+   wire OE_DUMMY;
+   wire CS_DUMMY;
+   wire [3:0] DI_DUMMY;
+   wire [3:0] RAM_Output_DUMMY;
+   wire [15:0] A_DUMMY;
+   wire WR_DUMMY;
+   wire [3:0] RAM_Err_Output_DUMMY;
+   
+   assign A[15:0] = A_DUMMY[15:0];
+   assign CS = CS_DUMMY;
+   assign DI[3:0] = DI_DUMMY[3:0];
+   assign OE = OE_DUMMY;
+   assign RAM_Err_Output[3:0] = RAM_Err_Output_DUMMY[3:0];
+   assign RAM_Output[3:0] = RAM_Output_DUMMY[3:0];
+   assign WR = WR_DUMMY;
+   RAM_Err  XLXI_2 (.A(A_DUMMY[15:0]), 
+                   .CS(CS_DUMMY), 
+                   .DI(DI_DUMMY[3:0]), 
+                   .OE(OE_DUMMY), 
+                   .WR(WR_DUMMY), 
+                   .DO(RAM_Err_Output_DUMMY[3:0]));
+   CMP  XLXI_3 (.A(RAM_Output_DUMMY[3:0]), 
+               .B(RAM_Err_Output_DUMMY[3:0]), 
+               .Error(CMP_Error));
+   RAM  XLXI_7 (.A(A_DUMMY[15:0]), 
+               .CS(CS_DUMMY), 
+               .DI(DI_DUMMY[3:0]), 
+               .OE(OE_DUMMY), 
+               .WR(WR_DUMMY), 
+               .DO(RAM_Output_DUMMY[3:0]));
+   TEST_BENCH  XLXI_8 (.A(A_DUMMY[15:0]), 
+                      .CS(CS_DUMMY), 
+                      .DI(DI_DUMMY[3:0]), 
+                      .OE(OE_DUMMY), 
+                      .WR(WR_DUMMY));
+endmodule

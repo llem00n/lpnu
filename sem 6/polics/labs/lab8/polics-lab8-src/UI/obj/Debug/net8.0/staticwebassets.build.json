@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "y83RLLsvrwGE0VoQ7QJGLKSwdAbEC0Ejegcm3EYzTJo=",
+  "Source": "UI",
+  "BasePath": "_content/UI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "UI/wwwroot",
+      "Source": "UI",
+      "ContentRoot": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/wwwroot/",
+      "BasePath": "_content/UI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/obj/Debug/net8.0/scopedcss/bundle/UI.styles.css",
+      "SourceId": "UI",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/obj/Debug/net8.0/scopedcss/bundle/",
+      "BasePath": "_content/UI",
+      "RelativePath": "UI.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/obj/Debug/net8.0/scopedcss/bundle/UI.styles.css"
+    },
+    {
+      "Identity": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/obj/Debug/net8.0/scopedcss/projectbundle/UI.bundle.scp.css",
+      "SourceId": "UI",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "BasePath": "_content/UI",
+      "RelativePath": "UI.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/obj/Debug/net8.0/scopedcss/projectbundle/UI.bundle.scp.css"
+    },
+    {
+      "Identity": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/wwwroot/app.css",
+      "SourceId": "UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/llem00n/Documents/lpnu/sem 6/polics/labs/lab8/polics-lab8-src/UI/wwwroot/",
+      "BasePath": "_content/UI",
+      "RelativePath": "app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.css"
+    }
+  ]
+}

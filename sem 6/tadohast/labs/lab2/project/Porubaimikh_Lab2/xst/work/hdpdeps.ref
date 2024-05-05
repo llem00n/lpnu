@@ -1,0 +1,32 @@
+V3 13
+FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/CMP.vhd 2024/03/28.23:41:47 P.20131013
+EN work/CMP 1711666283 \
+      FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/CMP.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/CMP/Behavioral 1711666284 \
+      FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/CMP.vhd \
+      EN work/CMP 1711666283
+FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM.vhd 2024/03/27.11:07:28 P.20131013
+EN work/RAM 1711666285 \
+      FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/RAM/Behavioral 1711666286 \
+      FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM.vhd \
+      EN work/RAM 1711666285
+FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM_Err.vhd 2024/03/27.11:17:33 P.20131013
+EN work/RAM_Err 1711666287 \
+      FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM_Err.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/MATH_REAL 1381692182 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/RAM_Err/Behavioral 1711666288 \
+      FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM_Err.vhd \
+      EN work/RAM_Err 1711666287
+FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/TEST_BENCH.vhd 2024/03/29.00:44:19 P.20131013
+EN work/TEST_BENCH 1711666282 \
+      FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/TEST_BENCH.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/TEST_BENCH_ARCH.vhd 2024/03/29.00:44:39 P.20131013
+AR work/TEST_BENCH/real 1711666289 \
+      FL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/TEST_BENCH_ARCH.vhd \
+      EN work/TEST_BENCH 1711666282 PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181

@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : scheme.vf
+// /___/   /\     Timestamp : 02/29/2024 20:56:38
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3a -verilog /media/sf_TDPZ/Porubaimikh_1/scheme.vf -w /media/sf_TDPZ/Porubaimikh_1/scheme.sch
+//Design Name: scheme
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module scheme(B, 
+              mistake, 
+              Res_B, 
+              Res_G);
+
+    input [3:0] B;
+   output mistake;
+   output [3:0] Res_B;
+   output [3:0] Res_G;
+   
+   wire [3:0] Res_B_DUMMY;
+   wire [3:0] Res_G_DUMMY;
+   
+   assign Res_B[3:0] = Res_B_DUMMY[3:0];
+   assign Res_G[3:0] = Res_G_DUMMY[3:0];
+   ALU_G  XLXI_1 (.B(B[3:0]), 
+                 .S(Res_G_DUMMY[3:0]));
+   ALU_B  XLXI_2 (.B(B[3:0]), 
+                 .S(Res_B_DUMMY[3:0]));
+   compare  XLXI_3 (.Res_B(Res_B_DUMMY[3:0]), 
+                   .Res_G(Res_G_DUMMY[3:0]), 
+                   .mistake(mistake));
+endmodule

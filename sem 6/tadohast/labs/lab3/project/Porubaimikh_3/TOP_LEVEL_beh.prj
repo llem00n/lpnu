@@ -1,0 +1,8 @@
+vhdl work "TSG.vhd"
+vhdl work "TSG_SIM.vhd"
+vhdl work "DD_Err.vhd"
+vhdl work "DD.vhd"
+vhdl work "CMP_S.vhd"
+vhdl work "CMP.vhd"
+verilog work "TOP_LEVEL.vf"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,14 @@
+**/.vs/
+**/Debug/
+**/x64/
+**/x86/
+**/Release/
+**/bin/
+**/obj/
+**/packages/
+
+**/.idea
+**/cmake-build-*/
+**/.build/
+
+**/.vscode

@@ -1,0 +1,9 @@
+EN ram_err NULL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM_Err.vhd sub00/vhpl02 1711666287
+AR ram_err behavioral //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM_Err.vhd sub00/vhpl03 1711666288
+AR cmp behavioral //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/CMP.vhd sub00/vhpl01 1711666284
+EN cmp NULL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/CMP.vhd sub00/vhpl00 1711666283
+MO TopLevel NULL TopLevel.vf vlg23/_top_level.bin 1711666283
+AR ram behavioral //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM.vhd sub00/vhpl06 1711666286
+AR test_bench real //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/TEST_BENCH_ARCH.vhd sub00/vhpl07 1711666289
+EN ram NULL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/RAM.vhd sub00/vhpl05 1711666285
+EN test_bench NULL //vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/TEST_BENCH.vhd sub00/vhpl04 1711666282

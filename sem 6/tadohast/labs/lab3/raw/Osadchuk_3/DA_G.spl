@@ -1,0 +1,10 @@
+[Inputs]
+rst
+pusk
+x0
+x1
+clk
+[Outputs]
+=Y[1:0]=
+=Res[2:0]=
+[BiDir]

@@ -1,0 +1,62 @@
+﻿@page "/"
+@using System.Text
+@rendermode InteractiveServer
+@inject IJSRuntime JsRuntime
+
+<PageTitle>AES-128 Cipher</PageTitle>
+
+<h1>AES-128 Cipher</h1>
+
+<div class="form">
+    <div>
+        <label for="key">Ключ</label>
+        <input id="key" type="text" @bind="_key" readonly />
+    </div>
+    <div>
+        <label for="inputText">Розшифрований текст</label>
+        <textarea id="inputText" @bind="_inputText"></textarea>
+    </div>
+    <div>
+        <label for="cipherText">Зашифрований текст</label>
+        <textarea id="cipherText" @bind="_cipherText"></textarea>
+    </div>
+    <div>
+        <button @onclick="Encrypt">Зашифрувати</button>
+        <button @onclick="Decrypt">Розшифрувати</button>
+    </div>
+</div>
+
+@code {
+    private string _key = "1347665909590674";
+    private string _inputText = "";
+    private string _cipherText = "";
+    
+    async void Encrypt()
+    {
+        try
+        {
+            var aesCts = new AesCts(Encoding.UTF8.GetBytes(_key), "PorubaimikhOleks"u8.ToArray());
+            _cipherText = System.Convert.ToBase64String(aesCts.Encrypt(Encoding.UTF8.GetBytes(_inputText)));
+        }
+        catch (Exception e)
+        {
+            await JsRuntime.InvokeVoidAsync("console.log", $"Error: {e.Message}\nAt: {e.StackTrace}");
+            throw;
+        }
+        
+    }
+    
+    async void Decrypt()
+    {
+        try
+        {
+            var aesCts = new AesCts(Encoding.UTF8.GetBytes(_key), "PorubaimikhOleks"u8.ToArray());
+            _inputText = Encoding.UTF8.GetString(aesCts.Decrypt(System.Convert.FromBase64String(_cipherText)));
+        }
+        catch (Exception e)
+        {
+            await JsRuntime.InvokeVoidAsync("console.log", $"Error: {e.Message}\nAt: {e.StackTrace}");
+            throw;
+        }
+    }
+}

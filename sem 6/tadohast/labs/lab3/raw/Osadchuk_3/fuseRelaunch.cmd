@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/media/sf_TDPZ/Osadchuk_3/scheme_scheme_sch_tb_isim_beh.exe" -prj "/media/sf_TDPZ/Osadchuk_3/scheme_scheme_sch_tb_beh.prj" "work.scheme_scheme_sch_tb" "work.glbl" 

@@ -1,0 +1,94 @@
+<mxfile host="Electron" modified="2024-04-02T08:35:16.851Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="AycHJkv_fASSL6bZyTZQ" version="24.0.4" type="device">
+  <diagram name="Page-1" id="0RALQIfZhGTLeUlz8IyW">
+    <mxGraphModel dx="768" dy="576" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LesuPTtVPlZrq7vNy9wQ-2" target="LesuPTtVPlZrq7vNy9wQ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-2" value="Початок" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="400" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LesuPTtVPlZrq7vNy9wQ-3" target="LesuPTtVPlZrq7vNy9wQ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-3" value="Отримання кількості процесів N і рангу поточного процесу R" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="480" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LesuPTtVPlZrq7vNy9wQ-5" target="LesuPTtVPlZrq7vNy9wQ-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260.02857142857135" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LesuPTtVPlZrq7vNy9wQ-5" target="LesuPTtVPlZrq7vNy9wQ-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-5" value="Поточний&amp;nbsp;&lt;div&gt;процес є головним?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="560" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-9" value="Так" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="580" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LesuPTtVPlZrq7vNy9wQ-11" target="LesuPTtVPlZrq7vNy9wQ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-11" value="Вивід повідомленння про процес №0" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="230" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LesuPTtVPlZrq7vNy9wQ-12" target="LesuPTtVPlZrq7vNy9wQ-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="339.9962068965517" y="795.0344827586207" as="sourcePoint" />
+            <mxPoint x="400" y="1030" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="795" />
+              <mxPoint x="360" y="1010" />
+              <mxPoint x="400" y="1010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-12" value="Повторення N - 1 разів" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="230" y="770" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LesuPTtVPlZrq7vNy9wQ-14" target="LesuPTtVPlZrq7vNy9wQ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-14" value="Отримання повідомлення від процесу P" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-16" value="Вивід&amp;nbsp;&lt;div&gt;повідомлення про процес P&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="230" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.027;entryY=0.443;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LesuPTtVPlZrq7vNy9wQ-16" target="LesuPTtVPlZrq7vNy9wQ-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="1000" />
+              <mxPoint x="210" y="1000" />
+              <mxPoint x="210" y="792" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-19" value="Кінець" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1030" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="LesuPTtVPlZrq7vNy9wQ-21" target="LesuPTtVPlZrq7vNy9wQ-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="1010" />
+              <mxPoint x="400" y="1010" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-21" value="Відправлення повідомлення про поточний процес R процеесу №0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="680" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LesuPTtVPlZrq7vNy9wQ-23" value="Ні" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="580" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

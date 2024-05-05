@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : scheme.vf
+// /___/   /\     Timestamp : 03/20/2024 14:13:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3a -verilog /media/sf_TDPZ/Osadchuk_3/scheme.vf -w /media/sf_TDPZ/Osadchuk_3/scheme.sch
+//Design Name: scheme
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module scheme(clk, 
+              pusk, 
+              rst, 
+              x0, 
+              x1, 
+              mistake, 
+              Res_B, 
+              Res_G);
+
+    input clk;
+    input pusk;
+    input rst;
+    input x0;
+    input x1;
+   output mistake;
+   output [2:0] Res_B;
+   output [2:0] Res_G;
+   
+   wire [1:0] XLXN_2;
+   wire [1:0] XLXN_17;
+   
+   DA_G  XLXI_1 (.clk(clk), 
+                .pusk(pusk), 
+                .rst(rst), 
+                .x0(x0), 
+                .x1(x1), 
+                .Res(Res_G[2:0]), 
+                .Y(XLXN_17[1:0]));
+   DA_B  XLXI_2 (.clk(clk), 
+                .pusk(pusk), 
+                .rst(rst), 
+                .x0(x0), 
+                .x1(x1), 
+                .Res(Res_B[2:0]), 
+                .Y(XLXN_2[1:0]));
+   comparator  XLXI_3 (.bad(XLXN_2[1:0]), 
+                      .good(XLXN_17[1:0]), 
+                      .mistake(mistake));
+endmodule

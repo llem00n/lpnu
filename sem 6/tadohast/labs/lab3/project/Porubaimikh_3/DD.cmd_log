@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD.xst" -ofn "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD.syr" 
+vhdtdtfi -lib work DD.vhd -prj Porubaimikh_3 -o DD.spl -module DD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a DD.spl Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD.sym 

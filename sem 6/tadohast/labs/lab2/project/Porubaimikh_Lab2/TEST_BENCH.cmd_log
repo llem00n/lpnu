@@ -1,0 +1,6 @@
+vhdtdtfi -lib work TEST_BENCH.vhd -prj Porubaimikh_Lab2 -o TEST_BENCH.spl -module TEST_BENCH -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a TEST_BENCH.spl Z:/school/tadohast/Porubaimikh_Lab2/TEST_BENCH.sym 
+vhdtdtfi -lib work TEST_BENCH.vhd -lib work TEST_BENCH_ARCH.vhd -prj Porubaimikh_Lab2 -o TEST_BENCH.spl -module TEST_BENCH -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a TEST_BENCH.spl Z:/school/tadohast/Porubaimikh_Lab2/TEST_BENCH.sym 
+vhdtdtfi -lib work TEST_BENCH.vhd -lib work TEST_BENCH_ARCH.vhd -prj Porubaimikh_Lab2 -o TEST_BENCH.spl -module TEST_BENCH -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a TEST_BENCH.spl Z:/school/tadohast/Porubaimikh_Lab2/TEST_BENCH.sym 

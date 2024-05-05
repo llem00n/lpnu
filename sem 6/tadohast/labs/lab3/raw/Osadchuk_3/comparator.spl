@@ -1,0 +1,6 @@
+[Inputs]
+=good[1:0]=
+=bad[1:0]=
+[Outputs]
+mistake
+[BiDir]

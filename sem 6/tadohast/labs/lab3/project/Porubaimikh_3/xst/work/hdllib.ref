@@ -1,0 +1,11 @@
+AR dd_err behavioral //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD_Err.vhd sub00/vhpl03 1712301434
+AR cmp behavioral //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/CMP.vhd sub00/vhpl05 1712302460
+EN dd NULL //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD.vhd sub00/vhpl00 1712301463
+EN dd_err NULL //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD_Err.vhd sub00/vhpl02 1712301433
+EN cmp NULL //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/CMP.vhd sub00/vhpl04 1712302459
+AR dd behavioral //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD.vhd sub00/vhpl01 1712301464
+EN tsg NULL //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TSG.vhd sub00/vhpl06 1712302456
+MO TOP_LEVEL NULL TOP_LEVEL.vf vlg7A/_t_o_p___l_e_v_e_l.bin 1712301455
+AR cmp_s behavioral //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/CMP_S.vhd sub00/vhpl09 1712302488
+AR tsg implementation //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TSG_IMP.vhd sub00/vhpl07 1712302461
+EN cmp_s NULL //vboxsvr/windows_shared/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/CMP_S.vhd sub00/vhpl08 1712302487

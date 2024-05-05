@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : TOP_LEVEL.vf
+// /___/   /\     Timestamp : 04/09/2024 17:39:31
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3a -verilog Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TOP_LEVEL.vf -w Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TOP_LEVEL.sch
+//Design Name: TOP_LEVEL
+//Device: spartan3a
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module TOP_LEVEL(CMP_STATE, 
+                 CMP_Y, 
+                 DD_Err_STATE, 
+                 DD_Err_Y, 
+                 DD_STATE, 
+                 DD_Y, 
+                 IN_CLK, 
+                 IN_PUSK, 
+                 IN_RST, 
+                 IN_X);
+
+   output CMP_STATE;
+   output CMP_Y;
+   output [2:0] DD_Err_STATE;
+   output [1:0] DD_Err_Y;
+   output [2:0] DD_STATE;
+   output [1:0] DD_Y;
+   output IN_CLK;
+   output IN_PUSK;
+   output IN_RST;
+   output [1:0] IN_X;
+   
+   wire [2:0] DD_STATE_DUMMY;
+   wire IN_RST_DUMMY;
+   wire [1:0] DD_Err_Y_DUMMY;
+   wire [1:0] DD_Y_DUMMY;
+   wire IN_CLK_DUMMY;
+   wire [2:0] DD_Err_STATE_DUMMY;
+   wire [1:0] IN_X_DUMMY;
+   wire IN_PUSK_DUMMY;
+   
+   assign DD_Err_STATE[2:0] = DD_Err_STATE_DUMMY[2:0];
+   assign DD_Err_Y[1:0] = DD_Err_Y_DUMMY[1:0];
+   assign DD_STATE[2:0] = DD_STATE_DUMMY[2:0];
+   assign DD_Y[1:0] = DD_Y_DUMMY[1:0];
+   assign IN_CLK = IN_CLK_DUMMY;
+   assign IN_PUSK = IN_PUSK_DUMMY;
+   assign IN_RST = IN_RST_DUMMY;
+   assign IN_X[1:0] = IN_X_DUMMY[1:0];
+   DD  XLXI_1 (.CLK(IN_CLK_DUMMY), 
+              .PUSK(IN_PUSK_DUMMY), 
+              .RST(IN_RST_DUMMY), 
+              .X(IN_X_DUMMY[1:0]), 
+              .STATE(DD_STATE_DUMMY[2:0]), 
+              .Y(DD_Y_DUMMY[1:0]));
+   DD_Err  XLXI_2 (.CLK(IN_CLK_DUMMY), 
+                  .PUSK(IN_PUSK_DUMMY), 
+                  .RST(IN_RST_DUMMY), 
+                  .X(IN_X_DUMMY[1:0]), 
+                  .STATE(DD_Err_STATE_DUMMY[2:0]), 
+                  .Y(DD_Err_Y_DUMMY[1:0]));
+   TSG  XLXI_3 (.CLK(IN_CLK_DUMMY), 
+               .PUSK(IN_PUSK_DUMMY), 
+               .RST(IN_RST_DUMMY), 
+               .X(IN_X_DUMMY[1:0]));
+   CMP  XLXI_4 (.A(DD_Y_DUMMY[1:0]), 
+               .B(DD_Err_Y_DUMMY[1:0]), 
+               .Error(CMP_Y));
+   CMP_S  XLXI_6 (.A(DD_STATE_DUMMY[2:0]), 
+                 .B(DD_Err_STATE_DUMMY[2:0]), 
+                 .Error(CMP_STATE));
+endmodule

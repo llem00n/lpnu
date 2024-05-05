@@ -1,0 +1,4 @@
+vhdl work "compare.vhd"
+vhdl work "ALU_G.vhd"
+vhdl work "ALU_B.vhd"
+verilog work "scheme.vf"

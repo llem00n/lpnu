@@ -1,0 +1,5 @@
+set -tmpdir "/media/sf_Stud/Hrytsak_1/xst/projnav.tmp"
+set -xsthdpdir "/media/sf_Stud/Hrytsak_1/xst"
+elaborate
+-ifn compare.prj
+-ifmt mixed

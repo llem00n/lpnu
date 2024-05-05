@@ -1,0 +1,5 @@
+vhdl work "\\vboxsvr\windows_shared\school\tadohast\Porubaimikh_Lab2\TEST_BENCH.vhd"
+vhdl work "\\vboxsvr\windows_shared\school\tadohast\Porubaimikh_Lab2\TEST_BENCH_ARCH.vhd"
+vhdl work "\\vboxsvr\windows_shared\school\tadohast\Porubaimikh_Lab2\RAM_Err.vhd"
+vhdl work "\\vboxsvr\windows_shared\school\tadohast\Porubaimikh_Lab2\RAM.vhd"
+vhdl work "\\vboxsvr\windows_shared\school\tadohast\Porubaimikh_Lab2\CMP.vhd"

@@ -1,0 +1,5 @@
+vhdl isim_temp "DA_G.vhd"
+vhdl isim_temp "DA_B.vhd"
+vhdl isim_temp "comparator.vhd"
+vhdl isim_temp "testbench.vhd"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

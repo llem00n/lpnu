@@ -1,0 +1,2 @@
+vhdtdtfi -lib work DA_G.vhd -prj Borysovskyi_3 -o DA_G.spl -module DA_G -template D:/Documents/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a DA_G.spl D:/Desktop/TDPZ/Lab3/Borysovskyi_3/DA_G.sym 

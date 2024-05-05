@@ -1,0 +1,10 @@
+vhdtdtfi -lib work ALU_B.vhd -prj Hrytsak_1 -o ALU_B.spl -module ALU_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a ALU_B.spl /media/sf_Stud/Hrytsak_1/ALU_B.sym 
+vhdtdtfi -lib work ALU_B.vhd -prj Lazurko_1 -o ALU_B.spl -module ALU_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a ALU_B.spl /media/sf_TDPZ/Lazurko_1/ALU_B.sym 
+vhdtdtfi -lib work ALU_B.vhd -prj Lazurko_1 -o ALU_B.spl -module ALU_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w ALU_B.spl /media/sf_TDPZ/Lazurko_1/ALU_B.sym 
+vhdtdtfi -lib work ALU_B.vhd -prj Nalezhyta_1 -o ALU_B.spl -module ALU_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w ALU_B.spl /media/sf_TDPZ/Nalezhyta_1/ALU_B.sym 
+vhdtdtfi -lib work ALU_B.vhd -prj Porubaimikh_1 -o ALU_B.spl -module ALU_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w ALU_B.spl /media/sf_TDPZ/Porubaimikh_1/ALU_B.sym 

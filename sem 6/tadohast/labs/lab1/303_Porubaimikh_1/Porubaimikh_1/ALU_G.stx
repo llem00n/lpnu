@@ -1,0 +1,41 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /media/sf_TDPZ/Lazurko_1/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to /media/sf_TDPZ/Lazurko_1/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/ALU_G is now defined in a different file.  It was defined in "/media/sf_Stud/Hrytsak_1/ALU_G.vhd", and is now defined in "/media/sf_TDPZ/Lazurko_1/ALU_G.vhd".
+WARNING:HDLParsers:3607 - Unit work/ALU_G/Behavioral is now defined in a different file.  It was defined in "/media/sf_Stud/Hrytsak_1/ALU_G.vhd", and is now defined in "/media/sf_TDPZ/Lazurko_1/ALU_G.vhd".
+Compiling vhdl file "/media/sf_TDPZ/Lazurko_1/ALU_G.vhd" in Library work.
+Entity <alu_g> compiled.
+Entity <alu_g> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> 
+
+
+Total memory usage is 464472 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

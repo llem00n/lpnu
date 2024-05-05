@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="fatal" file="HDLParsers" num="200" delta="new" srcfile="../s/vhptype.c" srcline="174" srcrcs="$Id: vhptype.c,v 1.9 2005/08/22 17:03:34 mikev Exp $" >INTERNAL ERROR... while parsing &quot;<arg fmt="%s" index="1">//vboxsvr/windows_shared/school/tadohast/Porubaimikh_Lab2/TEST_BENCH_ARCH.vhd</arg>&quot; line <arg fmt="%d" index="2">7</arg>. Contact your hot line.
+</msg>
+
+</messages>
+

@@ -1,0 +1,50 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 300px;
+}
+
+.form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > div > label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form > div > input, .form > div > textarea {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form > div > button {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.form > div > button:hover {
+    background-color: #ccc;
+}
+
+.form > div > button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.form > div > button:active {
+    background-color: #aac;
+}

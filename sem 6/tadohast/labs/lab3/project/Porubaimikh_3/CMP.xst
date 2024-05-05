@@ -1,0 +1,5 @@
+set -tmpdir "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/xst/projnav.tmp"
+set -xsthdpdir "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/xst"
+elaborate
+-ifn CMP.prj
+-ifmt mixed

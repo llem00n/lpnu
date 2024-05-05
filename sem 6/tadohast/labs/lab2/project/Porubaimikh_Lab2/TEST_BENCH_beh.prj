@@ -1,0 +1,2 @@
+vhdl work "TEST_BENCH.vhd"
+vhdl work "TEST_BENCH_ARCH_SIM.vhd"

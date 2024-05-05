@@ -1,0 +1,5 @@
+set -tmpdir "/media/sf_TDPZ/Osadchuk_3/xst/projnav.tmp"
+set -xsthdpdir "/media/sf_TDPZ/Osadchuk_3/xst"
+elaborate
+-ifn DA_B.prj
+-ifmt mixed

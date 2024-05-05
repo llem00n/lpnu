@@ -1,0 +1,6 @@
+vhdtdtfi -lib work RAM.vhd -prj Porubaimikh_Lab2 -o RAM.spl -module RAM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a RAM.spl Z:/school/tadohast/Porubaimikh_Lab2/RAM.sym 
+vhdtdtfi -lib work TEST_BENCH.vhd -lib work RAM.vhd -prj Porubaimikh_Lab2 -o RAM.spl -module RAM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a RAM.spl Z:/school/tadohast/Porubaimikh_Lab2/RAM.sym 
+vhdtdtfi -lib work RAM.vhd -prj Porubaimikh_Lab2 -o RAM.spl -module RAM -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a RAM.spl Z:/school/tadohast/Porubaimikh_Lab2/RAM.sym 

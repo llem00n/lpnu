@@ -1,0 +1,34 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /media/sf_TDPZ/Osadchuk_3/scheme_scheme_sch_tb_isim_beh.exe -prj /media/sf_TDPZ/Osadchuk_3/scheme_scheme_sch_tb_beh.prj work.scheme_scheme_sch_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 10
+Turning on mult-threading, number of parallel sub-compilation jobs: 20 
+Determining compilation order of HDL files
+Analyzing Verilog file "/media/sf_TDPZ/Osadchuk_3/scheme.vf" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "/media/sf_TDPZ/Osadchuk_3/DA_G.vhd" into library work
+Parsing VHDL file "/media/sf_TDPZ/Osadchuk_3/DA_B.vhd" into library work
+Parsing VHDL file "/media/sf_TDPZ/Osadchuk_3/comparator.vhd" into library work
+Parsing VHDL file "/media/sf_TDPZ/Osadchuk_3/testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 100724 KB
+Fuse CPU Usage: 1200 ms
+Compiling module glbl
+Compiling module scheme
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package vl_types
+Compiling architecture behavioral of entity DA_G [da_g_default]
+Compiling architecture behavioral of entity DA_B [da_b_default]
+Compiling architecture behavioral of entity comparator [comparator_default]
+Compiling architecture behavioral of entity scheme_scheme_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable /media/sf_TDPZ/Osadchuk_3/scheme_scheme_sch_tb_isim_beh.exe
+Fuse Memory Usage: 1464276 KB
+Fuse CPU Usage: 1880 ms
+GCC CPU Usage: 1280 ms

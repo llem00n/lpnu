@@ -1,0 +1,5 @@
+set -tmpdir "D:/Desktop/TDPZ/Lab3/Borysovskyi_3/xst/projnav.tmp"
+set -xsthdpdir "D:/Desktop/TDPZ/Lab3/Borysovskyi_3/xst"
+elaborate
+-ifn DA_G.prj
+-ifmt mixed

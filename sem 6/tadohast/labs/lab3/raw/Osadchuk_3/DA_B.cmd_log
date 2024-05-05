@@ -1,0 +1,26 @@
+vhdtdtfi -lib work DA_B.vhd -prj Borysovskyi_3 -o DA_B.spl -module DA_B -template D:/Documents/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a DA_B.spl D:/Desktop/TDPZ/Lab3/Borysovskyi_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Stoliar_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a DA_B.spl /media/sf_TDPZ/Stoliar_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Stoliar_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Stoliar_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Stoliar_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Stoliar_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Stoliar_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Stoliar_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Stoliar_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Stoliar_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Stoliar_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Stoliar_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Shaklein_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Shaklein_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Shaklein_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Shaklein_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Shaklein_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Shaklein_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Osadchuk_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Osadchuk_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Osadchuk_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Osadchuk_3/DA_B.sym 
+vhdtdtfi -lib work DA_B.vhd -prj Osadchuk_3 -o DA_B.spl -module DA_B -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w DA_B.spl /media/sf_TDPZ/Osadchuk_3/DA_B.sym 

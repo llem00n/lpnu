@@ -1,0 +1,7 @@
+[Inputs]
+[Outputs]
+RST
+PUSK
+CLK
+=X[1:0]=
+[BiDir]

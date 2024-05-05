@@ -1,0 +1,31 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TOP_LEVEL_isim_beh.exe -prj Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TOP_LEVEL_beh.prj work.TOP_LEVEL work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TOP_LEVEL.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TSG.vhd" into library work
+Parsing VHDL file "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TSG_SIM.vhd" into library work
+Parsing VHDL file "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD_Err.vhd" into library work
+Parsing VHDL file "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD.vhd" into library work
+Parsing VHDL file "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/CMP_S.vhd" into library work
+Parsing VHDL file "Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/CMP.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module TOP_LEVEL
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity DD [dd_default]
+Compiling architecture behavioral of entity DD_Err [dd_err_default]
+Compiling architecture simulation of entity TSG [tsg_default]
+Compiling architecture behavioral of entity CMP [cmp_default]
+Compiling architecture behavioral of entity CMP_S [cmp_s_default]
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/TOP_LEVEL_isim_beh.exe
+Fuse Memory Usage: 31616 KB
+Fuse CPU Usage: 296 ms

@@ -1,0 +1,8 @@
+vhdtdtfi -lib work ALU_G.vhd -prj Hrytsak_1 -o ALU_G.spl -module ALU_G -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a ALU_G.spl /media/sf_Stud/Hrytsak_1/ALU_G.sym 
+vhdtdtfi -lib work ALU_G.vhd -prj Lazurko_1 -o ALU_G.spl -module ALU_G -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w ALU_G.spl /media/sf_TDPZ/Lazurko_1/ALU_G.sym 
+vhdtdtfi -lib work ALU_G.vhd -prj Nalezhyta_1 -o ALU_G.spl -module ALU_G -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w ALU_G.spl /media/sf_TDPZ/Nalezhyta_1/ALU_G.sym 
+vhdtdtfi -lib work ALU_G.vhd -prj Porubaimikh_1 -o ALU_G.spl -module ALU_G -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a -w ALU_G.spl /media/sf_TDPZ/Porubaimikh_1/ALU_G.sym 

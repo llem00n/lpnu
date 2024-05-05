@@ -1,0 +1,7 @@
+AR alu_g behavioral /media/sf_TDPZ/Lazurko_1/ALU_G.vhd sub00/vhpl03 1709226173
+EN alu_b NULL /media/sf_TDPZ/Porubaimikh_1/ALU_B.vhd sub00/vhpl04 1709232123
+EN alu_g NULL /media/sf_TDPZ/Lazurko_1/ALU_G.vhd sub00/vhpl02 1709226172
+MO scheme NULL scheme.vf vlg2D/scheme.bin 1708987312
+EN compare NULL /media/sf_Stud/Hrytsak_1/compare.vhd sub00/vhpl00 1708987315
+AR compare behavioral /media/sf_Stud/Hrytsak_1/compare.vhd sub00/vhpl01 1708987316
+AR alu_b behavioral /media/sf_TDPZ/Porubaimikh_1/ALU_B.vhd sub00/vhpl05 1709232124

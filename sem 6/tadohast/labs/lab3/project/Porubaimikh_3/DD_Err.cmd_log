@@ -1,0 +1,2 @@
+vhdtdtfi -lib work DD_Err.vhd -prj Porubaimikh_3 -o DD_Err.spl -module DD_Err -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a DD_Err.spl Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/DD_Err.sym 

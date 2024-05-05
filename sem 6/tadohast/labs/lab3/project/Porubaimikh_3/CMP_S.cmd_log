@@ -1,0 +1,2 @@
+vhdtdtfi -lib work CMP_S.vhd -prj Porubaimikh_3 -o CMP_S.spl -module CMP_S -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a CMP_S.spl Z:/school/lpnu/tadohast/labs/lab3/project/Porubaimikh_3/CMP_S.sym 

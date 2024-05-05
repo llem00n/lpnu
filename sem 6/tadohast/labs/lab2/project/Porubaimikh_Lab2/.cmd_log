@@ -1,0 +1,2 @@
+vhdtdtfi -lib work TEST_BENCH.vhd -prj Porubaimikh_Lab2 -o .spl -module {} -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work TEST_BENCH.vhd -prj Porubaimikh_Lab2 -o .spl -module {} -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

@@ -1,0 +1,9 @@
+[Inputs]
+RST
+PUSK
+CLK
+=X[1:0]=
+[Outputs]
+=Y[1:0]=
+=STATE[2:0]=
+[BiDir]

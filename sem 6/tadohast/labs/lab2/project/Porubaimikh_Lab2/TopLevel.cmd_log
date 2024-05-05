@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family spartan3a -refsym TopLevel Z:/school/tadohast/Porubaimikh_Lab2/TopLevel.sch Z:/school/tadohast/Porubaimikh_Lab2/TopLevel.sym 
+sch2hdl -intstyle ise -family spartan3a -verilog TopLevel_drc.vf -w Z:/school/tadohast/Porubaimikh_Lab2/TopLevel.sch 
+sch2hdl -intstyle ise -family spartan3a -verilog TopLevel.vf -w Z:/school/tadohast/Porubaimikh_Lab2/TopLevel.sch 
+xst -intstyle ise -ifn "Z:/school/tadohast/Porubaimikh_Lab2/TopLevel.xst" -ofn "Z:/school/tadohast/Porubaimikh_Lab2/TopLevel.syr" 
+sch2hdl -intstyle ise -family spartan3a -verilog TopLevel_drc.vf -w Z:/school/tadohast/Porubaimikh_Lab2/TopLevel.sch 
+xst -intstyle ise -ifn "Z:/school/tadohast/Porubaimikh_Lab2/TopLevel.xst" -ofn "Z:/school/tadohast/Porubaimikh_Lab2/TopLevel.syr" 

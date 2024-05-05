@@ -1,0 +1,2 @@
+vhdl isim_temp "TEST_BENCH.vhd"
+vhdl isim_temp "TEST_BENCH_ARCH_SIM.vhd"

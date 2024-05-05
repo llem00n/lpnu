@@ -1,0 +1,8 @@
+[Inputs]
+[Outputs]
+OE
+WR
+CS
+=A[15:0]=
+=DI[3:0]=
+[BiDir]

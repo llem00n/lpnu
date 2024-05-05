@@ -1,0 +1,6 @@
+vhdl work "TEST_BENCH.vhd"
+vhdl work "TEST_BENCH_ARCH.vhd"
+vhdl work "RAM_Err.vhd"
+vhdl work "RAM.vhd"
+vhdl work "CMP.vhd"
+verilog work "TopLevel.vf"

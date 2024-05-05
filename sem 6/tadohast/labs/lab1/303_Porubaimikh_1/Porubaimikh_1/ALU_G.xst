@@ -1,0 +1,5 @@
+set -tmpdir "/media/sf_TDPZ/Lazurko_1/xst/projnav.tmp"
+set -xsthdpdir "/media/sf_TDPZ/Lazurko_1/xst"
+elaborate
+-ifn ALU_G.prj
+-ifmt mixed
