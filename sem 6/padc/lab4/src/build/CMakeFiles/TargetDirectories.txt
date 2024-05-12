@@ -1,0 +1,6 @@
+C:/Users/lpnu/lpnu/sem 6/padc/lab4/src/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/lpnu/lpnu/sem 6/padc/lab4/src/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/lpnu/lpnu/sem 6/padc/lab4/src/build/mt/CMakeFiles/mt.dir
+C:/Users/lpnu/lpnu/sem 6/padc/lab4/src/build/mt/CMakeFiles/ALL_BUILD.dir
+C:/Users/lpnu/lpnu/sem 6/padc/lab4/src/build/st/CMakeFiles/st.dir
+C:/Users/lpnu/lpnu/sem 6/padc/lab4/src/build/st/CMakeFiles/ALL_BUILD.dir
