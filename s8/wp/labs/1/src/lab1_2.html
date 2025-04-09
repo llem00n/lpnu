@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КІ-403 Порубайміх</title>
+</head>
+<body>
+  <script>
+    "use strict";
+
+    try {
+      const input = prompt("Введіть значення х:", "");
+      if (input === null || input.trim() === "") {
+        throw new Error("Ви не ввели значення.");
+      }
+
+      const x = parseFloat(input);
+      if (isNaN(x)) {
+        throw new Error("Введене значення не є числом.");
+      }
+
+      const a = x * x - 7 * x + 10;
+      const b = x * x - 8 * x + 12;
+
+      if (b === 0) {
+        throw new Error("Ділення на нуль неможливе.");
+      }
+
+      const c = a / b;
+      alert(`Результат обчислення: c = ${c}`);
+    } catch (error) {
+      alert(`Помилка: ${error.message}`);
+    }
+  </script>
+</body>
+</html>

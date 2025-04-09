@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КІ-403 - Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      header,
+      footer {
+        background-color: #f4f4f4;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .task {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .output {
+        background-color: #e8f5e9;
+        padding: 10px;
+        border: 1px solid #c8e6c9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Лабораторна робота 3.3</h1>
+    </header>
+
+    <section>
+      <div class="task">Завдання:</div>
+      <p>Демонстрація створення функції користувача з аргументами.</p>
+    </section>
+
+    <section>
+      <div class="task">Результат виконання:</div>
+      <div class="output" id="output"></div>
+    </section>
+
+    <footer>
+      <p>КІ-403 Порубайміх Олександр</p>
+    </footer>
+
+    <script>
+      function calculateSum(a, b) {
+        return a + b;
+      }
+
+      function displayResult(taskDescription) {
+        const outputDiv = document.getElementById("output");
+
+        const num1 = 15;
+        const num2 = 25;
+        const sum = calculateSum(num1, num2);
+
+        outputDiv.innerHTML = `
+          <p>${taskDescription}</p>
+          <p>Число 1: <strong>${num1}</strong></p>
+          <p>Число 2: <strong>${num2}</strong></p>
+          <p>Сума: <strong>${sum}</strong></p>
+        `;
+      }
+
+      const taskDescription =
+        "Обчислення суми двох чисел за допомогою функції користувача.";
+
+      displayResult(taskDescription);
+    </script>
+  </body>
+</html>

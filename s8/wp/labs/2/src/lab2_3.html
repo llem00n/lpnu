@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>КІ-403 - Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .task,
+      .developer {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f9f9f9;
+      }
+
+      .developer {
+        color: #666;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Демонстрація оператора SWITCH</h1>
+    <div class="task">
+      <h2>Завдання:</h2>
+      <p>
+        Створити скрипт, що демонструє можливості використання оператора SWITCH.
+        Модифікувати та збагачувати приклад іншими конструкціями.
+      </p>
+    </div>
+
+    <script>
+      "use strict";
+
+      function getAgeSuffix(age) {
+        let b = age % 10;
+        let s;
+        switch (b) {
+          case 1:
+            s = "рік";
+            break;
+          case 2:
+          case 3:
+          case 4:
+            s = "роки";
+            break;
+          default:
+            s = "років";
+        }
+        if (age > 10 && age < 20) {
+          s = "років";
+        }
+        return s;
+      }
+
+      function displayResult() {
+        let age = parseInt(prompt("Введіть ваш вік"));
+        if (isNaN(age) || age <= 0) {
+          document.write("<p>Будь ласка, введіть коректний вік.</p>");
+          return;
+        }
+        let suffix = getAgeSuffix(age);
+        document.write(`<p>Вам - ${age} ${suffix}.</p>`);
+      }
+
+      displayResult();
+    </script>
+
+    <div class="developer">
+      <p>Порубайміх Олександр, група КІ-403</p>
+    </div>
+  </body>
+</html>

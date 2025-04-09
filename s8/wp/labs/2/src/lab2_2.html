@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>КІ-403, Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .center {
+        text-align: center;
+      }
+      .task {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .developer {
+        margin-top: 20px;
+        font-style: italic;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="task">
+      Завдання: Знаходження більшого числа серед трьох чисел
+    </div>
+    <div id="output" class="center"></div>
+    <div class="developer">Порубайміх Олександр</div>
+    <script>
+      "use strict";
+
+      function findMaxNumber(a, b, c) {
+        if (a > b && a > c) {
+          return `Найбільше серед трьох чисел - a=${a}`;
+        } else if (b > c) {
+          return `Найбільше серед трьох чисел - b=${b}`;
+        } else {
+          return `Найбільше серед трьох чисел - c=${c}`;
+        }
+      }
+
+      function findMaxUsingTernary(a, b, c) {
+        let max = a > b ? a : b;
+        max = max > c ? max : c;
+        return `Значення найбільшого серед трьох чисел - ${max}`;
+      }
+
+      function displayResults() {
+        const a = 1,
+          b = 22,
+          c = 3;
+
+        const output = document.getElementById("output");
+        output.innerHTML = `
+          <p>${findMaxNumber(a, b, c)}</p>
+          <p>${findMaxUsingTernary(a, b, c)}</p>
+        `;
+      }
+
+      displayResults();
+    </script>
+  </body>
+</html>

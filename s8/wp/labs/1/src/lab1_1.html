@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КІ-403 Порубайміх</title>
+</head>
+<body>
+  <h1 id="greeting">Ласкаво просимо!</h1>
+  <script>
+    alert("Привіт, користувачу!");
+
+    let userName = "";
+    let isConfirmed = false;
+
+    while (!isConfirmed) {
+      userName = prompt("Як вас звати?");
+      if (userName) {
+        isConfirmed = confirm(`Ви впевнені, що ваше ім'я ${userName}?`);
+      }
+    }
+
+    document.getElementById("greeting").textContent = `Привіт, ${userName}!`;
+  </script>
+</body>
+</html>

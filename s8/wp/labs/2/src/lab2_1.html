@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>КІ-403 Порубайміх Олександр - Використання оператора IF</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      .center {
+        text-align: center;
+      }
+      .task {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .developer-info {
+        margin-top: 30px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      document.write(
+        "<p class='center'>Використання оператора <strong>IF</strong></p>"
+      );
+
+      let age = 10;
+      if (age < 18) {
+        document.write("<p>Ви занадто молоді для перегляду цього сайту</p>");
+      }
+
+      document.write(
+        "<p class='center'>Використання оператора <strong>IF</strong> з блоком <strong>ELSE</strong></p>"
+      );
+
+      let mood = "добре";
+      if (mood === "добре") {
+        document.write("<p>Я -- норм!</p>");
+      } else {
+        document.write(`<p>Щось мені не норм... А як? А ось так: ${mood}</p>`);
+      }
+
+      document.write(
+        "<p class='center'>Використання оператора <strong>IF</strong> з блоками <strong>ELSE IF</strong></p>"
+      );
+
+      mood = "ніяк";
+      if (mood === "добре") {
+        document.write("<p>Я в хорошому настрої!</p>");
+      } else if (mood === "погано") {
+        document.write("<p>Впадайте у відчай, я за вами!</p>");
+      } else {
+        document.write(`<p>Я все зрозумів, мені так: ${mood}</p>`);
+      }
+
+      document.write(
+        "<p class='developer-info'>Розробник: КІ-403 Порубайміх Олександр</p>"
+      );
+    </script>
+  </body>
+</html>

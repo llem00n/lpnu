@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КІ-403 - Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      header,
+      footer {
+        background-color: #f4f4f4;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .task {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .output {
+        background-color: #e8f5e9;
+        padding: 10px;
+        border: 1px solid #c8e6c9;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Лабораторна робота 4.1</h1>
+    </header>
+
+    <section>
+      <div class="task">Результат виконання:</div>
+      <div class="output" id="output"></div>
+    </section>
+
+    <footer>
+      <p>КІ-403 Порубайміх Олександр</p>
+    </footer>
+
+    <script>
+      function generateTriangularNumbers(n) {
+        return Array.from({ length: n }, (_, i) => ((i + 1) * (i + 2)) / 2);
+      }
+
+      function generateSquares(n) {
+        return Array.from({ length: n }, (_, i) => (i + 1) ** 2);
+      }
+
+      function displayArrayInfo() {
+        const triangularNumbers = generateTriangularNumbers(10);
+        const squares = generateSquares(10);
+        const combined = [...triangularNumbers, ...squares];
+        const sortedCombined = [...combined].sort((a, b) => b - a);
+
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = `
+          <p>Трикутні числа: <strong>${triangularNumbers.join("  ")}</strong></p>
+          <p>Квадрати чисел: <strong>${squares.join("  ")}</strong></p>
+          <p>Об'єднаний масив: <strong>${combined.join(", ")}</strong></p>
+          <p>Відсортований масив: <strong>${sortedCombined.join(", ")}</strong></p>
+        `;
+      }
+
+      displayArrayInfo();
+    </script>
+  </body>
+</html>

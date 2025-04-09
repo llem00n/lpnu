@@ -1,0 +1,35 @@
+clear;
+clc;
+A1 = -3; A2 = 6; A3 = 15; A4 = -0.12;
+w1 = 6; w2 = 1/5; w3 = 3; w4 = 8;
+phi1 = %pi / 5; phi2 = %pi / 6; phi3 = 0; phi4 = %pi / 7;
+M = 2^5;
+coef = 2^0;
+w_max = max([w1, w2, w3, w4]);
+f_max = w_max / (2 * %pi);
+dt = 1 / (2 * f_max * coef);
+T = 10 * %pi;
+t = 0:dt:T-dt;
+x = A1 * cos(w1 * t + phi1) - A2 * sin(w2 * t + phi2) + A3 * sin(w3 * t + phi3) - A4 * cos(w4 * t + phi4);
+maxA = max(abs(x));
+minA = -maxA;
+N = length(x);
+k = (maxA - minA) / (M - 1);
+K = minA:k:maxA;
+y = floor(x / k) * k;
+if modulo(M, 2) == 0 then
+    y = y + k / 2;
+end
+KK = ones(N, 1) * K; plot(t, KK, 'k--');
+ff = gca();
+ff.auto_ticks = ["on", "on", "on"];
+xlabel('t, s');
+ylabel('Quantization levels');
+plot2d(t, x, 3);
+plot2d(t, y, 5);
+a = max(abs(y - x));
+disp('a = ', a);
+b = (1 / N) * (sum(y) - sum(x));
+disp('b = ', b);
+d = (1 / N) * sum((y-x).^2);
+disp('d = ', d);

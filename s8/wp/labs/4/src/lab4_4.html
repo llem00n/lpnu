@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КІ-403 - Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      header,
+      footer {
+        background-color: #f4f4f4;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .task {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .output {
+        background-color: #e8f5e9;
+        padding: 10px;
+        border: 1px solid #c8e6c9;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Лабораторна робота 4.4</h1>
+    </header>
+
+    <section>
+      <div class="task">Результат виконання:</div>
+      <div class="output" id="output"></div>
+    </section>
+
+    <footer>
+      <p>КІ-403 Порубайміх Олександр</p>
+    </footer>
+
+    <script>
+      function displayArrayInfo() {
+        const fruits = ['apple', 'pineapple', 'mango', 'melon', 'grape'];
+        const citrus = ['orange', 'lemon', 'lime'];
+
+        const mergedArray = [...fruits, ...citrus];
+        const fruitsWithInsertions = [...fruits];
+        fruitsWithInsertions.splice(3, 0, 'pear', 'cherry', 'plum', 'raspberry', 'strawberry');
+        const fruitsTrimmed = fruits.slice(0, -3);
+        const fruitsSorted = [...fruits].sort();
+        const fruitsReverseSorted = [...fruits].sort().reverse();
+        const fruitsSortedByLength = [...fruits].sort((a, b) => a.length - b.length);
+
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = `
+          <p>Масив fruits: <strong>${fruits.join(", ")}</strong></p>
+          <p>Масив citrus: <strong>${citrus.join(", ")}</strong></p>
+          <p>Об'єднаний масив: <strong>${mergedArray.join(", ")}</strong></p>
+          <p>Масив fruits з доданими елементами: <strong>${fruitsWithInsertions.join(", ")}</strong></p>
+          <p>Масив fruits без останніх 3 елементів: <strong>${fruitsTrimmed.join(", ")}</strong></p>
+          <p>Масив fruits, відсортований за алфавітом: <strong>${fruitsSorted.join(", ")}</strong></p>
+          <p>Масив fruits у зворотному алфавітному порядку: <strong>${fruitsReverseSorted.join(", ")}</strong></p>
+          <p>Масив fruits, відсортований за довжиною слів: <strong>${fruitsSortedByLength.join(", ")}</strong></p>
+        `;
+      }
+
+      displayArrayInfo();
+    </script>
+  </body>
+</html>

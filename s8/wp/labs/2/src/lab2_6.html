@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КІ-403 - Порубайміх Олександр</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .developer-info {
+      margin-top: 20px;
+      font-style: italic;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Гра "Вгадай число"</h1>
+  <p>Спробуйте вгадати число, яке я загадав, від 1 до 100. У вас є необмежена кількість спроб!</p>
+  <div id="game-output"></div>
+  <div class="developer-info">
+    <p>Порубайміх Олександр, КІ-403</p>
+  </div>
+  <script>
+    function playGame() {
+      const targetNumber = Math.floor(Math.random() * 100) + 1;
+      let attempts = 0;
+      let guessed = false;
+
+      while (!guessed) {
+        const userGuess = prompt("Введіть ваше число (від 1 до 100):");
+        if (userGuess === null) {
+          alert("Гру скасовано.");
+          return;
+        }
+
+        const guess = parseInt(userGuess, 10);
+        attempts++;
+
+        if (isNaN(guess) || guess < 1 || guess > 100) {
+          alert("Будь ласка, введіть коректне число від 1 до 100.");
+        } else if (guess < targetNumber) {
+          alert("Загадане число більше.");
+        } else if (guess > targetNumber) {
+          alert("Загадане число менше.");
+        } else {
+          guessed = true;
+          alert(`Вітаю! Ви вгадали число ${targetNumber} за ${attempts} спроб.`);
+        }
+      }
+
+      document.getElementById("game-output").innerHTML = `
+        <h2>Результати гри</h2>
+        <p>Ви вгадали число <strong>${targetNumber}</strong> за <strong>${attempts}</strong> спроб.</p>
+      `;
+    }
+
+    playGame();
+  </script>
+</body>
+</html>

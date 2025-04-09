@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КІ-403 - Порубайміх Олександр</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    header,
+    footer {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .task {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .output {
+      background-color: #e8f5e9;
+      padding: 10px;
+      border: 1px solid #c8e6c9;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Лабораторна 6.1</h1>
+  </header>
+
+  <section>
+    <div class="task">Створення об'єкта «Мобільний телефон» за допомогою літерала</div>
+    <div class="output" id="output"></div>
+  </section>
+
+  <footer>
+    <p>КІ-403 Порубайміх Олександр</p>
+  </footer>
+
+  <script>
+    const phone = {
+      type: "Смартфон",
+      os: "Android",
+      screenSize: "6.5\"",
+      resolution: "2400x1080",
+      ram: "8 ГБ",
+      info: function () {
+        return `Тип: ${this.type}<br>ОС: ${this.os}<br>Розмір екрана: ${this.screenSize}<br>Роздільна здатність: ${this.resolution}<br>ОЗП: ${this.ram}`;
+      }
+    };
+
+    document.getElementById("output").innerHTML = phone.info();
+  </script>
+
+</body>
+
+</html>

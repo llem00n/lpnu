@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КІ-403 - Порубайміх Олександр</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    header,
+    footer {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .task {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .output {
+      background-color: #e8f5e9;
+      padding: 10px;
+      border: 1px solid #c8e6c9;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Лабораторна 6.3</h1>
+  </header>
+
+  <section>
+    <div class="task">Опис класу «Мобільний телефон» з гетерами, сетерами та методом виведення інформації</div>
+    <div class="output" id="output"></div>
+  </section>
+
+  <footer>
+    <p>КІ-403 Порубайміх Олександр</p>
+  </footer>
+
+  <script>
+    class MobilePhone {
+      constructor(type, os, screenSize, resolution, ram) {
+        this._type = type;
+        this._os = os;
+        this._screenSize = screenSize;
+        this._resolution = resolution;
+        this._ram = ram;
+      }
+
+      get type() { return this._type; }
+      set type(value) { this._type = value; }
+
+      get os() { return this._os; }
+      set os(value) { this._os = value; }
+
+      get screenSize() { return this._screenSize; }
+      set screenSize(value) { this._screenSize = value; }
+
+      get resolution() { return this._resolution; }
+      set resolution(value) { this._resolution = value; }
+
+      get ram() { return this._ram; }
+      set ram(value) { this._ram = value; }
+
+      info() {
+        return `
+          Тип: ${this._type}<br>
+          ОС: ${this._os}<br>
+          Розмір екрана: ${this._screenSize}<br>
+          Роздільна здатність: ${this._resolution}<br>
+          ОЗП: ${this._ram}
+        `;
+      }
+    }
+
+    const myPhone = new MobilePhone("Смартфон", "Android", "6.5\"", "2400x1080", "8 ГБ");
+    document.getElementById("output").innerHTML = myPhone.info();
+  </script>
+
+</body>
+
+</html>

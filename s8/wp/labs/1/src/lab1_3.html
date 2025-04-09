@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КІ-403 Порубайміх</title>
+</head>
+<body>
+  <script>
+    "use strict";
+
+    try {
+      let n = parseInt(prompt("Введіть кількість кутів n (ціле число більше 2):", ""));
+      if (isNaN(n) || n <= 2) {
+        throw new Error("Кількість кутів має бути цілим числом більше 2.");
+      }
+
+      let r = parseFloat(prompt("Введіть радіус r (додатнє число):", ""));
+      if (isNaN(r) || r <= 0) {
+        throw new Error("Радіус має бути додатнім числом.");
+      }
+
+      let a = 2 * r * Math.tan(Math.PI / n);
+      let p = a * n;
+      let s = (1 / 2) * n * a * r;
+
+      alert("Площа = " + s.toFixed(2));
+      alert("Периметр = " + p.toFixed(2));
+    } catch (error) {
+      alert("Помилка: " + error.message);
+    }
+  </script>
+</body>
+</html>

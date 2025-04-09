@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КІ-403 - Порубайміх Олександр</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    header,
+    footer {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .task {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .inputContainer {
+      display: flex;
+      column-gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    #userInput {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    .output {
+      background-color: #e8f5e9;
+      padding: 10px;
+      border: 1px solid #c8e6c9;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Лабораторна робота 5.4</h1>
+  </header>
+
+  <section>
+    <div class="inputContainer">
+      <input type="text" id="userInput" placeholder="Введіть текст тут" />
+      <button onclick="processInput()">Обробити</button>
+    </div>
+    <div class="output" id="output"></div>
+  </section>
+
+  <footer>
+    <p>КІ-403 Порубайміх Олександр</p>
+  </footer>
+
+  <script>
+    function processInput() {
+      const input = document.getElementById("userInput").value;
+      const processedText = shuffleWords(input);
+
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = `
+        <p>Змінений текст: <strong>${processedText}</strong></p>
+      `;
+    }
+
+    function shuffleWords(text) {
+      return text
+        .split(" ")
+        .map(word => shuffleWord(word))
+        .join(" ");
+    }
+
+    function shuffleWord(word) {
+      if (word.length <= 3) return word;
+      const middle = word.slice(1, -1).split("");
+      for (let i = middle.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [middle[i], middle[j]] = [middle[j], middle[i]];
+      }
+      return word[0] + middle.join("") + word[word.length - 1];
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КІ-403 - Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      header,
+      footer {
+        background-color: #f4f4f4;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .task {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .output {
+        background-color: #e8f5e9;
+        padding: 10px;
+        border: 1px solid #c8e6c9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Лабораторна робота 3.6</h1>
+    </header>
+
+    <section>
+      <div class="task">Завдання:</div>
+      <p>Демонстрація передачі функції як аргумент іншої функції.</p>
+    </section>
+
+    <section>
+      <div class="task">Результат виконання:</div>
+      <div class="output" id="output"></div>
+    </section>
+
+    <footer>
+      <p>КІ-403 Порубайміх Олександр</p>
+    </footer>
+
+    <script>
+      function calculate(a, b, operation) {
+        return operation(a, b);
+      }
+
+      function add(x, y) {
+        return x + y;
+      }
+
+      function multiply(x, y) {
+        return x * y;
+      }
+
+      function formatResult(a, b, operationName, result) {
+        return `
+          <p>Число 1: <strong>${a}</strong></p>
+          <p>Число 2: <strong>${b}</strong></p>
+          <p>Операція: <strong>${operationName}</strong></p>
+          <p>Результат: <strong>${result}</strong></p>
+        `;
+      }
+
+      function displayResult(taskDescription) {
+        const outputDiv = document.getElementById("output");
+
+        const num1 = 8;
+        const num2 = 4;
+
+        const sum = calculate(num1, num2, add);
+        const product = calculate(num1, num2, multiply);
+
+        outputDiv.innerHTML = `
+          <p>${taskDescription}</p>
+          ${formatResult(num1, num2, "Додавання", sum)}
+          ${formatResult(num1, num2, "Множення", product)}
+        `;
+      }
+
+      const taskDescription =
+        "Передача функції як аргумент іншої функції для виконання арифметичних операцій.";
+
+      displayResult(taskDescription);
+    </script>
+  </body>
+</html>

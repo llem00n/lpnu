@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КІ-403 - Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      header,
+      footer {
+        background-color: #f4f4f4;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .task {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .output {
+        background-color: #e8f5e9;
+        padding: 10px;
+        border: 1px solid #c8e6c9;
+      }
+      .developer-info {
+        font-style: italic;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Лабораторна робота 3.5</h1>
+    </header>
+
+    <section>
+      <div class="task">Завдання:</div>
+      <p>
+        Демонстрація створення функції з необов'язковими параметрами та
+        параметрами за замовчуванням.
+      </p>
+    </section>
+
+    <section>
+      <div class="task">Результат виконання:</div>
+      <div class="output" id="output"></div>
+    </section>
+
+    <footer>
+      <p>КІ-403 Порубайміх Олександр</p>
+    </footer>
+
+    <script>
+      function calculateSum(a = 5, b = 10, c = 0) {
+        return a + b + c;
+      }
+
+      function formatResult(a, b, c, sum) {
+        return `
+          <p>Число 1: <strong>${a}</strong></p>
+          <p>Число 2: <strong>${b}</strong></p>
+          <p>Число 3 (необов'язкове): <strong>${c}</strong></p>
+          <p>Сума: <strong>${sum}</strong></p>
+        `;
+      }
+
+      function displayResult(taskDescription) {
+        const outputDiv = document.getElementById("output");
+
+        const num1 = 7;
+        const num2 = 3;
+        const num3 = 2;
+        const sum = calculateSum(num1, num2, num3);
+
+        outputDiv.innerHTML = `
+          <p>${taskDescription}</p>
+          ${formatResult(num1, num2, num3, sum)}
+        `;
+      }
+
+      const taskDescription =
+        "Обчислення суми трьох чисел (одне з яких необов'язкове) за допомогою функції з параметрами за замовчуванням.";
+
+      displayResult(taskDescription);
+    </script>
+  </body>
+</html>

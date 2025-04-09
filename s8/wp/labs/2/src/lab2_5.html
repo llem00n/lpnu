@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>КІ-403 - Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .task {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .developer {
+        margin-top: 30px;
+        font-style: italic;
+        color: #666;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Демонстрація використання оператора циклу for...in</h1>
+    <p class="task">
+      Завдання: Використати оператор циклу for...in для роботи з об'єктами.
+    </p>
+    <script>
+      "use strict";
+
+      function displayObjectInfo(obj) {
+        document.write("<ul>");
+        for (let key in obj) {
+          document.write("<li><b>" + key + ":</b> " + obj[key] + "</li>");
+        }
+        document.write("</ul>");
+      }
+
+      document.write("<h2>Інформація про студента:</h2>");
+      let student = {
+        name: "Олександр",
+        surname: "Порубайміх",
+        group: "КІ-403",
+        age: 21,
+        hobby: "Програмування",
+      };
+
+      displayObjectInfo(student);
+
+      let car = {
+        brand: "Tesla",
+        model: "Model S",
+        year: 2022,
+        color: "Чорний",
+      };
+
+      document.write("<h2>Інформація про автомобіль:</h2>");
+      displayObjectInfo(car);
+
+      document.write(
+        "<p class='developer'>Порубайміх Олександр, група КІ-403</p>"
+      );
+    </script>
+  </body>
+</html>

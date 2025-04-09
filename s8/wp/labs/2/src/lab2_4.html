@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>КІ-403 - Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      p {
+        margin: 10px 0;
+      }
+      .developer-info {
+        margin-top: 20px;
+        font-style: italic;
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Демонстрація використання операторів циклу</h1>
+    <p>
+      Цей скрипт демонструє використання операторів циклу <b>for</b>,
+      <b>while</b>, та <b>do while</b>.
+    </p>
+    <script>
+      "use strict";
+
+      function powerUsingFor(x, y) {
+        let result = x;
+        for (let i = 2; i <= Math.abs(y); i++) {
+          result *= x;
+        }
+        return y > 0 ? result : 1 / result;
+      }
+
+      function powerUsingWhile(x, y) {
+        let result = x;
+        let i = 2;
+        while (i <= Math.abs(y)) {
+          result *= x;
+          i++;
+        }
+        return y > 0 ? result : 1 / result;
+      }
+
+      function powerUsingDoWhile(x, y) {
+        let result = x;
+        let i = 2;
+        do {
+          result *= x;
+          i++;
+        } while (i <= Math.abs(y));
+        return y > 0 ? result : 1 / result;
+      }
+
+      let x = parseInt(prompt("Введіть число x:"));
+      let y = parseInt(prompt("Введіть ступінь y:"));
+
+      document.write("<h2>Результати обчислень</h2>");
+      document.write(
+        "<p><b>Цикл FOR:</b> Число " +
+          x +
+          " в ступені " +
+          y +
+          " дорівнює " +
+          powerUsingFor(x, y) +
+          ".</p>"
+      );
+      document.write(
+        "<p><b>Цикл WHILE:</b> Число " +
+          x +
+          " в ступені " +
+          y +
+          " дорівнює " +
+          powerUsingWhile(x, y) +
+          ".</p>"
+      );
+      document.write(
+        "<p><b>Цикл DO WHILE:</b> Число " +
+          x +
+          " в ступені " +
+          y +
+          " дорівнює " +
+          powerUsingDoWhile(x, y) +
+          ".</p>"
+      );
+
+      document.write(
+        "<div class='developer-info'>Порубайміх Олександр, група КІ-403.</div>"
+      );
+    </script>
+  </body>
+</html>

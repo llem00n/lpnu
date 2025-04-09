@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КІ-403 - Порубайміх Олександр</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    header,
+    footer {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .task {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .output {
+      background-color: #e8f5e9;
+      padding: 10px;
+      border: 1px solid #c8e6c9;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Лабораторна 6.4</h1>
+  </header>
+
+  <section>
+    <div class="task">Успадкування класу «Мобільний телефон» з новими властивостями: дата виходу та вартість</div>
+    <div class="output" id="output"></div>
+  </section>
+
+  <footer>
+    <p>КІ-403 Порубайміх Олександр</p>
+  </footer>
+
+  <script>
+    class MobilePhone {
+      constructor(type, os, screenSize, resolution, ram) {
+        this._type = type;
+        this._os = os;
+        this._screenSize = screenSize;
+        this._resolution = resolution;
+        this._ram = ram;
+      }
+
+      info() {
+        return `
+          Тип: ${this._type}<br>
+          ОС: ${this._os}<br>
+          Розмір екрана: ${this._screenSize}<br>
+          Роздільна здатність: ${this._resolution}<br>
+          ОЗП: ${this._ram}
+        `;
+      }
+    }
+
+    class Smartphone extends MobilePhone {
+      constructor(type, os, screenSize, resolution, ram, releaseDate, price) {
+        super(type, os, screenSize, resolution, ram);
+        this.releaseDate = releaseDate;
+        this.price = price;
+      }
+
+      info() {
+        return `
+          ${super.info()}<br>
+          Дата виходу на ринок: ${this.releaseDate}<br>
+          Вартість: ${this.price} грн
+        `;
+      }
+    }
+
+    const advancedPhone = new Smartphone("Смартфон", "Android", "6.5\"", "2400x1080", "8 ГБ", "2023-09-01", 13999);
+    document.getElementById("output").innerHTML = advancedPhone.info();
+  </script>
+
+</body>
+
+</html>

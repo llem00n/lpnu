@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>КІ-403 - Порубайміх Олександр</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      header,
+      footer {
+        background-color: #f4f4f4;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .task {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .output {
+        background-color: #e8f5e9;
+        padding: 10px;
+        border: 1px solid #c8e6c9;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Лабораторна робота 4.3</h1>
+    </header>
+
+    <section>
+      <div class="task">Результат виконання:</div>
+      <div class="output" id="output"></div>
+    </section>
+
+    <footer>
+      <p>КІ-403 Порубайміх Олександр</p>
+    </footer>
+
+    <script>
+      function generateRandomArray(length, min, max) {
+        return Array.from(
+          { length },
+          () => Math.floor(Math.random() * (max - min + 1)) + min
+        );
+      }
+
+      function calculateSumAndCount(array, D, C) {
+        const sum = array.filter((num) => num < D).reduce((a, b) => a + b, 0);
+        const count = array.filter(
+          (num, index) => index % 2 === 0 && num > C
+        ).length;
+        return { sum, count };
+      }
+
+      function displayArrayInfo() {
+        const randomArray = generateRandomArray(15, 1, 100);
+        const D = 50;
+        const C = 30;
+        const { sum, count } = calculateSumAndCount(randomArray, D, C);
+
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = `
+          <p>Згенерований масив: <strong>${randomArray.join(", ")}</strong></p>
+          <p>Сума чисел, менших за ${D}: <strong>${sum}</strong></p>
+          <p>Кількість чисел на парних місцях, більших за ${C}: <strong>${count}</strong></p>
+        `;
+      }
+
+      displayArrayInfo();
+    </script>
+  </body>
+</html>

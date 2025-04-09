@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КІ-403 - Порубайміх Олександр</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    header,
+    footer {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .task {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .output {
+      background-color: #e8f5e9;
+      padding: 10px;
+      border: 1px solid #c8e6c9;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Лабораторна 6.2</h1>
+  </header>
+
+  <section>
+    <div class="task">Функція-конструктор для створення об'єкта «Мобільний телефон» з використанням гетерів, сетерів і
+      prototype</div>
+    <div class="output" id="output"></div>
+  </section>
+
+  <footer>
+    <p>КІ-403 Порубайміх Олександр</p>
+  </footer>
+
+  <script>
+    function MobilePhone(type, os, screenSize, resolution, ram) {
+      this._type = type;
+      this._os = os;
+      this._screenSize = screenSize;
+      this._resolution = resolution;
+      this._ram = ram;
+    }
+
+    // Гетери і сетери
+    MobilePhone.prototype = {
+      get type() { return this._type; },
+      set type(val) { this._type = val; },
+
+      get os() { return this._os; },
+      set os(val) { this._os = val; },
+
+      get screenSize() { return this._screenSize; },
+      set screenSize(val) { this._screenSize = val; },
+
+      get resolution() { return this._resolution; },
+      set resolution(val) { this._resolution = val; },
+
+      get ram() { return this._ram; },
+      set ram(val) { this._ram = val; },
+    };
+
+    // Прототипне доповнення
+    MobilePhone.prototype.releaseDate = "2023-09-01";
+
+    MobilePhone.prototype.info = function () {
+      return `
+        Тип: ${this._type}<br>
+        ОС: ${this._os}<br>
+        Розмір екрана: ${this._screenSize}<br>
+        Роздільна здатність: ${this._resolution}<br>
+        ОЗП: ${this._ram}<br>
+        Дата виходу на ринок: ${this.releaseDate}
+      `;
+    };
+
+    const myPhone = new MobilePhone("Смартфон", "Android", "6.5\"", "2400x1080", "8 ГБ");
+    document.getElementById("output").innerHTML = myPhone.info();
+  </script>
+
+</body>
+
+</html>

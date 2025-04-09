@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>КІ-403 - Порубайміх Олександр</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+
+    header,
+    footer {
+      background-color: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .task {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .output {
+      background-color: #e8f5e9;
+      padding: 10px;
+      border: 1px solid #c8e6c9;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Лабораторна 6.5</h1>
+  </header>
+
+  <section>
+    <div class="task">Створення масиву об'єктів «Мобільний телефон» та аналіз за вартістю</div>
+    <div class="output" id="output"></div>
+  </section>
+
+  <footer>
+    <p>КІ-403 Порубайміх Олександр</p>
+  </footer>
+
+  <script>
+    class MobilePhone {
+      constructor(type, os, screenSize, resolution, ram) {
+        this.type = type;
+        this.os = os;
+        this.screenSize = screenSize;
+        this.resolution = resolution;
+        this.ram = ram;
+      }
+
+      info() {
+        return `
+          Тип: ${this.type}<br>
+          ОС: ${this.os}<br>
+          Розмір екрана: ${this.screenSize}<br>
+          Роздільна здатність: ${this.resolution}<br>
+          ОЗП: ${this.ram}
+        `;
+      }
+    }
+
+    class Smartphone extends MobilePhone {
+      constructor(type, os, screenSize, resolution, ram, releaseDate, price) {
+        super(type, os, screenSize, resolution, ram);
+        this.releaseDate = releaseDate;
+        this.price = price;
+      }
+
+      info() {
+        return `
+          ${super.info()}<br>
+          Дата виходу на ринок: ${this.releaseDate}<br>
+          Вартість: ${this.price} грн
+        `;
+      }
+    }
+
+    const phones = [
+      new Smartphone("Смартфон", "Android", "6.1\"", "2340x1080", "6 ГБ", "2022-11-01", 9999),
+      new Smartphone("Смартфон", "iOS", "6.7\"", "2778x1284", "6 ГБ", "2023-03-15", 44999),
+      new Smartphone("Смартфон", "Android", "6.5\"", "2400x1080", "8 ГБ", "2023-09-01", 13999),
+      new Smartphone("Смартфон", "Android", "6.43\"", "2400x1080", "12 ГБ", "2024-01-05", 19999)
+    ];
+
+    const prices = phones.map(phone => phone.price);
+    const minPrice = Math.min(...prices);
+    const maxPrice = Math.max(...prices);
+    const totalPrice = prices.reduce((sum, p) => sum + p, 0);
+    const averagePrice = totalPrice / phones.length;
+    const aboveAverageCount = phones.filter(p => p.price > averagePrice).length;
+
+    let html = phones.map(p => `<p>${p.info()}</p>`).join("<hr>");
+    html += `<hr><p><strong>Мінімальна вартість:</strong> ${minPrice} грн</p>`;
+    html += `<p><strong>Максимальна вартість:</strong> ${maxPrice} грн</p>`;
+    html += `<p><strong>Сумарна вартість:</strong> ${totalPrice} грн</p>`;
+    html += `<p><strong>Середня вартість:</strong> ${averagePrice.toFixed(2)} грн</p>`;
+    html += `<p><strong>Кількість об'єктів з вартістю вище за середню:</strong> ${aboveAverageCount}</p>`;
+
+    document.getElementById("output").innerHTML = html;
+  </script>
+
+</body>
+
+</html>
